@@ -1,0 +1,214 @@
+/* Style guide 
+* Teal color (used for headings and backgrounds): `#4aaaa5`
+* Regular font color (used for paragraphs and all text besides the headings): `#777777`
+* Main header background color: `#ffffff`
+* Main header border color: `#cccccc`
+* Footer background color: `#666666`
+* Main content background color: `#ffffff`
+* Main content border color: `#dddddd`
+* For heading fonts use `font-family: 'Georgia', Times, Times New Roman, serif;`.
+* For all other fonts use `'Arial', 'Helvetica Neue', Helvetica, sans-serif;`.
+* The entire content and the main section content area is `960px` wide.
+* Bonus
+1. Make your pages more sophisticated by adding style to text links, to image links, and to buttons for when a user hovers their cursor over them.
+2. You can use [Adobe Kuler](https://color.adobe.com/create/color-wheel/) to find colors that match the theme (in this case, the primary color is Teal `#4aaaa5`).
+3. Make a "sticky footer."
+* Give the Footer the following CSS:
+* border-top: 8px solid #4aaaa5;
+*/
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+/* Global styles
+------------------------------------- */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+ }
+h1, h2, h3 {
+  font-family: 'Georgia', Times, "Times New Roman", serif;
+}
+
+/* Header 
+------------------------------------- */
+header {
+  height: 70px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #cccccc;
+
+  text-align: center;
+}
+.header_container {
+  max-width: 960px;
+  margin: 0 auto; 
+}
+header h1 {
+  float: left;
+
+  line-height: 70px;
+  background-color: #4aaaa5;
+  color: white;
+  padding: 0 20px;
+  font-size: 25px;
+}
+header ul {
+  text-decoration: none;
+  float: right;
+}
+header li {
+  display: inline-block;
+  line-height: 70px;
+}
+header a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(204, 204, 204, 0.3);
+  padding: 0 15px;
+}
+header ul li:last-child a {
+  border-right: none;
+  padding-right: 0;
+}
+
+/* Main 
+------------------------------------- */
+main {
+  background-image: url(../images/what-the-hex.png);
+  padding: 30px 0;
+}
+main section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0px 30px 20px 30px;
+  background-color: #ffffff;
+}
+main h2 {
+  line-height: 90px;
+  color: #4aaaa5;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 30px;
+}
+
+/* About
+------------------------------------- */
+
+/* Portfolio
+------------------------------------- */
+
+/* Contact
+------------------------------------- */
+
+/* Footer
+------------------------------------- */
+footer {
+  height: 50px;
+  text-align: center;
+  background-color: rgba(106, 106, 106, 1);
+  border-top: 8px solid #4aaaa5;
+  /* to place p at the bottom */
+  position: relative; 
+}
+footer p {
+  color: white;
+  font-size: 14px;
+  max-width: 960px;
+  margin: 0 auto;
+  /* to place p at the bottom */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
