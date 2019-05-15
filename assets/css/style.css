@@ -175,6 +175,7 @@ main section {
   background-color: #ffffff;
 }
 main h2 {
+  font-size: 25px;
   line-height: 90px;
   color: #4aaaa5;
   border-bottom: 1px solid #dddddd;
@@ -183,9 +184,40 @@ main h2 {
 
 /* About
 ------------------------------------- */
+.about_image {
+  float: left;
+  margin-right: 20px;
+
+  width: 220px;
+  height: 180px;
+  object-fit: cover;
+}
+.about_p {
+  line-height: 2em;
+}
 
 /* Portfolio
 ------------------------------------- */
+.portfolio_container {
+  position: relative;
+
+  display: inline-block;
+  margin: 0 30px 50px 0;
+}
+.portfolio_container h3 {
+  position: absolute; 
+  bottom: 20px;
+
+  background-color: #4aaaa5;
+  color: white;
+  width: 300px;
+  text-align: center;
+  padding: 15px 0;
+}
+.portfolio_container img {
+  width: 300px;
+  height: 200px;
+}
 
 /* Contact
 ------------------------------------- */
