@@ -114,7 +114,7 @@ input, select {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-body {
+body, p, a {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color:#777777;
  }
@@ -150,17 +150,19 @@ header ul {
 }
 header li {
   display: inline-block;
-  line-height: 70px;
 }
 header a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.3);
   border-right: 1px solid rgba(204, 204, 204, 0.3);
   padding: 0 15px;
+  line-height: 70px;
 }
 header ul li:last-child a {
   border-right: none;
   padding-right: 0;
+}
+header a:hover {
+  color: black;
 }
 
 /* Main 
@@ -168,6 +170,8 @@ header ul li:last-child a {
 main {
   background-image: url(../images/what-the-hex.png);
   padding: 30px 0;
+  /* for sticky footer */
+  margin-bottom: 40px;
 }
 main section {
   max-width: 960px;
@@ -233,13 +237,13 @@ main h2 {
 /* Contact
 ------------------------------------- */
 form p {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 input, textarea {
   width: 100%;
-  margin-bottom: 15px;
-  font-size: 16px;
+  margin-bottom: 10px;
+  font-size: 14px;
   padding: 10px;
 }
 textarea {
@@ -281,16 +285,20 @@ textarea {
 /* Footer
 ------------------------------------- */
 footer {
-  height: 50px;
+  width: 100%;
+  height: 40px;
   text-align: center;
   background-color: rgba(106, 106, 106, 1);
   border-top: 8px solid #4aaaa5;
-  /* to place p at the bottom */
-  position: relative; 
+  /* to make it sticky at the bottom */
+  position: fixed; 
+  bottom: 0;
+
+  z-index: 2;
 }
 footer p {
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   max-width: 960px;
   margin: 0 auto;
   /* to place p at the bottom */
