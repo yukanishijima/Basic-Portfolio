@@ -254,11 +254,13 @@ textarea {
   height: 50px;
   position: relative;
   overflow: hidden;
+  background: #4aaaa5;
+  border: 1px solid #4aaaa5;
 }
 .border {
   width: 120px;
   height: 50px;
-  border: 60px solid #4aaaa5;
+  border: 60px solid white;
 
   transition: all 0.5s ease;
   position: absolute;
@@ -266,19 +268,22 @@ textarea {
 .submit {
   width: 120px;
   height: 50px;
-  background-color: #4aaaa5;
-  border: 1px solid #4aaaa5;
+  border: 1px solid white;
   color: white;
+  color: #4aaaa5;
   font-size: 20px;
 
   transition: all 0.5s ease;
   position: relative;
 }
-.button:hover .border{
+.button:hover {
   border: 0px solid #4aaaa5;
 }
+.button:hover .border{
+  border: 0px solid white;
+}
 .button:hover .submit {
-  color: #4aaaa5;
+  color: white;
   background: none;
 }
 
