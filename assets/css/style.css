@@ -255,8 +255,6 @@ textarea {
   position: relative;
   overflow: hidden;
   background: #4aaaa5;
-
-  transition-delay: 0.5s;
 }
 .border {
   width: 120px;
